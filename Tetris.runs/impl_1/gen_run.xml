@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1734083762">
+  <File Type="ROUTE-PWR" Name="TetrisTopModule_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="TetrisTopModule.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="TetrisTopModule_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="TetrisTopModule_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="TetrisTopModule.msk"/>
+  <File Type="ROUTE-CLK" Name="TetrisTopModule_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="TetrisTopModule.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="TetrisTopModule_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="TetrisTopModule.bit"/>
+  <File Type="BG-DRC" Name="TetrisTopModule.drc"/>
+  <File Type="BG-BGN" Name="TetrisTopModule.bgn"/>
+  <File Type="BG-BIN" Name="TetrisTopModule.bin"/>
+  <File Type="BITSTR-RBT" Name="TetrisTopModule.rbt"/>
+  <File Type="BITSTR-NKY" Name="TetrisTopModule.nky"/>
+  <File Type="BITSTR-BMM" Name="TetrisTopModule_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="TetrisTopModule.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="TetrisTopModule_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-SYSDEF" Name="TetrisTopModule.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="TetrisTopModule.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-DRC" Name="TetrisTopModule_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="TetrisTopModule.hwdef"/>
+  <File Type="PLACE-IO" Name="TetrisTopModule_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="TetrisTopModule_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="TetrisTopModule_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="TetrisTopModule_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="TetrisTopModule_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="TetrisTopModule_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="TetrisTopModule_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="TetrisTopModule_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="TetrisTopModule_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="TetrisTopModule_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="TetrisTopModule_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="TetrisTopModule_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="TetrisTopModule_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="TetrisTopModule_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="TetrisTopModule_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="TetrisTopModule_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="TetrisTopModule_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="TetrisTopModule_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="TetrisTopModule_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="TetrisTopModule_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="TetrisTopModule_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="TetrisTopModule_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="TetrisTopModule_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="TetrisTopModule_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="TetrisTopModule_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="TetrisTopModule_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="TetrisTopModule_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="TetrisTopModule_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="TetrisTopModule_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="TetrisTopModule_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="TetrisTopModule_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="TetrisTopModule_bus_skew_postroute_physopted.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="TetrisTopModule_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="TetrisTopModule_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="TetrisTopModule_methodology_drc_routed.rpx"/>
+  <File Type="PDI-FILE" Name="TetrisTopModule.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="TetrisTopModule_boot.pdi"/>
+  <File Type="PL-PDI-FILE" Name="TetrisTopModule_pld.pdi"/>
+  <File Type="RCFI_FILE" Name="TetrisTopModule.rcfi"/>
+  <File Type="CFI_FILE" Name="TetrisTopModule.cfi"/>
+  <File Type="RNPI_FILE" Name="TetrisTopModule.rnpi"/>
+  <File Type="NPI_FILE" Name="TetrisTopModule.npi"/>
+  <File Type="RBD_FILE" Name="TetrisTopModule.rbd"/>
+  <File Type="ROUTE-RQS" Name="TetrisTopModule_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="TetrisTopModule_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/ButtonModule.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Debouncer.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/GameDisplay.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/GameLogicV2.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/RandomGen.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ScoreDisplay.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vgaCLKDIV/vgaCLKDIV.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SpaceInvader1/SpaceInvader1.srcs/sources_1/imports/sources_1/ip/vgaCLKDIV/vgaCLKDIV.v"/>
+        <Attr Name="ImportTime" Val="1731690986"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/vgaCLKDIV/vgaCLKDIV_clk_wiz.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SpaceInvader1/SpaceInvader1.srcs/sources_1/imports/sources_1/ip/vgaCLKDIV/vgaCLKDIV_clk_wiz.v"/>
+        <Attr Name="ImportTime" Val="1731773092"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/TetrisTopModule.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="TetrisTopModule"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/basys3_master.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/gameLogic.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+</GenRun>

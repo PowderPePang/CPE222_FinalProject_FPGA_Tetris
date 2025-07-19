@@ -1,0 +1,725 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Fri Dec 13 17:00:19 2024
+| Host         : ACER-i7-Notebook running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file TetrisTopModule_control_sets_placed.rpt
+| Design       : TetrisTopModule
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   647 |
+|    Minimum number of control sets                        |   647 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |  4448 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   647 |
+| >= 0 to < 4        |   632 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     2 |
+| >= 14 to < 16      |     2 |
+| >= 16              |    10 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             308 |          262 |
+| No           | No                    | Yes                    |             463 |          436 |
+| No           | Yes                   | No                     |             274 |          236 |
+| Yes          | No                    | No                     |             168 |          110 |
+| Yes          | No                    | Yes                    |              22 |           13 |
+| Yes          | Yes                   | No                     |              37 |           10 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------+--------------------------+--------------------------+------------------+----------------+--------------+
+|        Clock Signal       |       Enable Signal      |     Set/Reset Signal     | Slice Load Count | Bel Load Count | Bels / Slice |
++---------------------------+--------------------------+--------------------------+------------------+----------------+--------------+
+|  gl/grid_reg[104]_1       |                          | gl/grid_reg[104]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[105]_1       |                          | gl/grid_reg[105]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[103]_1       |                          | gl/grid_reg[103]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[101]_1       |                          | gl/grid_reg[101]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[100]_1       |                          | gl/grid_reg[100]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[102]_1       |                          | gl/grid_reg[102]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[111]_1       |                          | gl/grid_reg[111]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[109]_1       |                          | gl/grid_reg[109]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[106]_1       |                          | gl/grid_reg[106]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[110]_1       |                          | gl/grid_reg[110]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[124]_1       |                          | gl/grid_reg[124]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[113]_1       |                          | gl/grid_reg[113]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[122]_1       |                          | gl/grid_reg[122]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[114]_1       |                          | gl/grid_reg[114]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[112]_1       |                          | gl/grid_reg[112]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[116]_1       |                          | gl/grid_reg[116]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[121]_1       |                          | gl/grid_reg[121]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[123]_1       |                          | gl/grid_reg[123]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[126]_1       |                          | gl/grid_reg[126]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[115]_1       |                          | gl/grid_reg[115]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[118]_1       |                          | gl/grid_reg[118]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[117]_1       |                          | gl/grid_reg[117]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[125]_1       |                          | gl/grid_reg[125]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[138]_1       |                          | gl/grid_reg[138]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[142]_1       |                          | gl/grid_reg[142]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[129]_1       |                          | gl/grid_reg[129]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[133]_1       |                          | gl/grid_reg[133]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[128]_1       |                          | gl/grid_reg[128]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[137]_1       |                          | gl/grid_reg[137]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[140]_1       |                          | gl/grid_reg[140]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[139]_1       |                          | gl/grid_reg[139]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[127]_1       |                          | gl/grid_reg[127]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[130]_1       |                          | gl/grid_reg[130]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[141]_1       |                          | gl/grid_reg[141]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[136]_1       |                          | gl/grid_reg[136]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[134]_1       |                          | gl/grid_reg[134]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[135]_1       |                          | gl/grid_reg[135]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[159]_1       |                          | gl/grid_reg[159]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[146]_1       |                          | gl/grid_reg[146]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[149]_1       |                          | gl/grid_reg[149]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[145]_1       |                          | gl/grid_reg[145]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[153]_1       |                          | gl/grid_reg[153]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[147]_1       |                          | gl/grid_reg[147]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[154]_1       |                          | gl/grid_reg[154]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[148]_1       |                          | gl/grid_reg[148]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[157]_1       |                          | gl/grid_reg[157]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[158]_1       |                          | gl/grid_reg[158]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[152]_1       |                          | gl/grid_reg[152]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[150]_1       |                          | gl/grid_reg[150]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[151]_1       |                          | gl/grid_reg[151]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[174]_1       |                          | gl/grid_reg[174]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[173]_1       |                          | gl/grid_reg[173]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[161]_1       |                          | gl/grid_reg[161]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[166]_1       |                          | gl/grid_reg[166]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[170]_1       |                          | gl/grid_reg[170]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[163]_1       |                          | gl/grid_reg[163]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[162]_1       |                          | gl/grid_reg[162]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[164]_1       |                          | gl/grid_reg[164]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[165]_1       |                          | gl/grid_reg[165]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[171]_1       |                          | gl/grid_reg[171]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[160]_1       |                          | gl/grid_reg[160]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[172]_1       |                          | gl/grid_reg[172]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[169]_1       |                          | gl/grid_reg[169]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[189]_1       |                          | gl/grid_reg[189]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[176]_1       |                          | gl/grid_reg[176]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[184]_1       |                          | gl/grid_reg[184]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[183]_1       |                          | gl/grid_reg[183]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[175]_1       |                          | gl/grid_reg[175]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[177]_1       |                          | gl/grid_reg[177]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[187]_1       |                          | gl/grid_reg[187]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[182]_1       |                          | gl/grid_reg[182]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[181]_1       |                          | gl/grid_reg[181]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[186]_1       |                          | gl/grid_reg[186]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[185]_1       |                          | gl/grid_reg[185]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[188]_1       |                          | gl/grid_reg[188]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[178]_1       |                          | gl/grid_reg[178]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[197]_1       |                          | gl/grid_reg[197]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[202]_1       |                          | gl/grid_reg[202]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[206]_1       |                          | gl/grid_reg[206]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[199]_1       |                          | gl/grid_reg[199]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[200]_1       |                          | gl/grid_reg[200]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[201]_1       |                          | gl/grid_reg[201]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[194]_1       |                          | gl/grid_reg[194]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[193]_1       |                          | gl/grid_reg[193]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[196]_1       |                          | gl/grid_reg[196]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[198]_1       |                          | gl/grid_reg[198]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[205]_1       |                          | gl/grid_reg[205]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[207]_1       |                          | gl/grid_reg[207]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[195]_1       |                          | gl/grid_reg[195]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[190]_1       |                          | gl/grid_reg[190]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[209]_1       |                          | gl/grid_reg[209]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[218]_1       |                          | gl/grid_reg[218]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[211]_1       |                          | gl/grid_reg[211]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[217]_1       |                          | gl/grid_reg[217]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[221]_1       |                          | gl/grid_reg[221]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[213]_1       |                          | gl/grid_reg[213]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[210]_1       |                          | gl/grid_reg[210]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[212]_1       |                          | gl/grid_reg[212]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[208]_1       |                          | gl/grid_reg[208]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[222]_1       |                          | gl/grid_reg[222]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[220]_1       |                          | gl/grid_reg[220]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[223]_1       |                          | gl/grid_reg[223]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[214]_1       |                          | gl/grid_reg[214]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[219]_1       |                          | gl/grid_reg[219]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[243]_1       |                          | gl/grid_reg[243]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[230]_1       |                          | gl/grid_reg[230]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[225]_1       |                          | gl/grid_reg[225]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[226]_1       |                          | gl/grid_reg[226]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[232]_1       |                          | gl/grid_reg[232]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[229]_1       |                          | gl/grid_reg[229]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[233]_1       |                          | gl/grid_reg[233]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[224]_1       |                          | gl/grid_reg[224]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[231]_1       |                          | gl/grid_reg[231]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[237]_1       |                          | gl/grid_reg[237]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[234]_1       |                          | gl/grid_reg[234]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[241]_1       |                          | gl/grid_reg[241]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[238]_1       |                          | gl/grid_reg[238]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[235]_1       |                          | gl/grid_reg[235]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[236]_1       |                          | gl/grid_reg[236]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[242]_1       |                          | gl/grid_reg[242]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[246]_1       |                          | gl/grid_reg[246]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[245]_1       |                          | gl/grid_reg[245]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[250]_1       |                          | gl/grid_reg[250]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[244]_1       |                          | gl/grid_reg[244]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[254]_1       |                          | gl/grid_reg[254]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[255]_1       |                          | gl/grid_reg[255]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[247]_1       |                          | gl/grid_reg[247]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[248]_1       |                          | gl/grid_reg[248]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[249]_1       |                          | gl/grid_reg[249]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[256]_1       |                          | gl/grid_reg[256]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[253]_1       |                          | gl/grid_reg[253]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[266]_1       |                          | gl/grid_reg[266]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[269]_1       |                          | gl/grid_reg[269]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[25]_1        |                          | gl/grid_reg[25]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[261]_1       |                          | gl/grid_reg[261]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[260]_1       |                          | gl/grid_reg[260]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[262]_1       |                          | gl/grid_reg[262]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[257]_1       |                          | gl/grid_reg[257]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[258]_1       |                          | gl/grid_reg[258]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[267]_1       |                          | gl/grid_reg[267]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[268]_1       |                          | gl/grid_reg[268]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[265]_1       |                          | gl/grid_reg[265]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[259]_1       |                          | gl/grid_reg[259]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[272]_1       |                          | gl/grid_reg[272]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[271]_1       |                          | gl/grid_reg[271]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[270]_1       |                          | gl/grid_reg[270]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[274]_1       |                          | gl/grid_reg[274]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[26]_1        |                          | gl/grid_reg[26]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[273]_1       |                          | gl/grid_reg[273]_2       |                1 |              1 |         1.00 |
+|  gl/grid_reg[27]_1        |                          | gl/grid_reg[27]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[29]_1        |                          | gl/grid_reg[29]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[30]_1        |                          | gl/grid_reg[30]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[28]_1        |                          | gl/grid_reg[28]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[39]_1        |                          | gl/grid_reg[39]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[42]_1        |                          | gl/grid_reg[42]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[45]_1        |                          | gl/grid_reg[45]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[32]_1        |                          | gl/grid_reg[32]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[51]_1        |                          | gl/grid_reg[51]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[50]_1        |                          | gl/grid_reg[50]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[41]_1        |                          | gl/grid_reg[41]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[33]_1        |                          | gl/grid_reg[33]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[34]_1        |                          | gl/grid_reg[34]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[52]_1        |                          | gl/grid_reg[52]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[38]_1        |                          | gl/grid_reg[38]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[40]_1        |                          | gl/grid_reg[40]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[31]_1        |                          | gl/grid_reg[31]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[44]_1        |                          | gl/grid_reg[44]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[49]_1        |                          | gl/grid_reg[49]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[37]_1        |                          | gl/grid_reg[37]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[53]_1        |                          | gl/grid_reg[53]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[43]_1        |                          | gl/grid_reg[43]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[46]_1        |                          | gl/grid_reg[46]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[56]_1        |                          | gl/grid_reg[56]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[55]_1        |                          | gl/grid_reg[55]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[54]_1        |                          | gl/grid_reg[54]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[61]_1        |                          | gl/grid_reg[61]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[62]_1        |                          | gl/grid_reg[62]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[63]_1        |                          | gl/grid_reg[63]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[64]_1        |                          | gl/grid_reg[64]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[58]_1        |                          | gl/grid_reg[58]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[57]_1        |                          | gl/grid_reg[57]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[78]_1        |                          | gl/grid_reg[78]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[65]_1        |                          | gl/grid_reg[65]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[79]_1        |                          | gl/grid_reg[79]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[67]_1        |                          | gl/grid_reg[67]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[75]_1        |                          | gl/grid_reg[75]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[73]_1        |                          | gl/grid_reg[73]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[76]_1        |                          | gl/grid_reg[76]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[69]_1        |                          | gl/grid_reg[69]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[74]_1        |                          | gl/grid_reg[74]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[66]_1        |                          | gl/grid_reg[66]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[77]_1        |                          | gl/grid_reg[77]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[70]_1        |                          | gl/grid_reg[70]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[68]_1        |                          | gl/grid_reg[68]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[93]_1        |                          | gl/grid_reg[93]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[88]_1        |                          | gl/grid_reg[88]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[80]_1        |                          | gl/grid_reg[80]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[85]_1        |                          | gl/grid_reg[85]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[90]_1        |                          | gl/grid_reg[90]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[82]_1        |                          | gl/grid_reg[82]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[86]_1        |                          | gl/grid_reg[86]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[87]_1        |                          | gl/grid_reg[87]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[92]_1        |                          | gl/grid_reg[92]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[91]_1        |                          | gl/grid_reg[91]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[89]_1        |                          | gl/grid_reg[89]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[81]_1        |                          | gl/grid_reg[81]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[97]_1        |                          | gl/grid_reg[97]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[99]_1        |                          | gl/grid_reg[99]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[98]_1        |                          | gl/grid_reg[98]_2        |                1 |              1 |         1.00 |
+|  gl/grid_reg[94]_1        |                          | gl/grid_reg[94]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[94]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 | gl/downTimer[23]_i_2_n_0 |                          |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[104]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[105]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[103]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[101]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[106]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[100]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[102]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[103]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[105]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[100]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[102]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[101]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[104]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[110]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[111]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[111]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[109]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[106]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[109]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[110]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[112]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[125]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[126]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[114]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[124]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[113]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[113]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[122]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[123]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[117]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[114]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[112]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[118]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[116]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[116]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[121]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[123]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[126]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[115]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[118]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[121]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[117]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[122]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[115]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[124]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[125]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[138]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[142]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[142]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[140]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[129]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[129]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[133]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[128]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[137]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[128]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[133]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[127]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[134]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[135]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[140]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[136]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[139]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[137]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[139]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[127]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[130]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[130]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[138]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[141]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[136]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[141]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[134]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[135]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[159]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[159]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[146]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[147]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[148]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[149]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[145]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[146]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[145]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[149]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[150]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[151]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[153]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[153]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[152]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[147]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[154]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[154]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[148]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[157]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[157]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[158]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[152]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[150]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[151]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[158]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[165]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[174]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[173]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[161]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[164]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[162]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[166]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[160]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[170]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[169]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[163]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[163]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[162]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[164]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[165]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[166]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[170]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[171]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[160]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[172]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[161]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[169]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[172]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[171]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[173]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[189]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[189]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[176]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[174]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[176]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[175]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[177]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[184]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[184]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[183]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[175]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[182]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[177]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[186]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[181]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[183]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[187]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[187]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[178]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[182]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[185]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[181]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[186]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[185]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[188]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[188]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[178]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[197]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[202]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[206]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[199]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[199]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[200]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[201]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[194]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[201]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[193]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[190]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[196]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[198]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[202]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[205]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[205]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[200]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[198]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[206]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[207]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[207]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[193]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[197]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[194]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[195]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[190]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[195]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[196]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[223]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[209]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[210]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[214]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[220]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[212]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[218]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[211]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[217]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[221]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[218]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[208]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[213]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[209]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[210]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[211]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[212]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[213]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[208]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[221]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[222]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[222]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[220]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[219]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[223]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[217]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[214]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[219]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[243]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[243]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[225]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[232]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[241]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[224]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[230]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[234]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[225]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[226]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[232]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[229]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[229]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[233]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[224]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[230]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[226]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[231]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[231]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[233]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[236]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[237]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[237]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[238]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[234]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[235]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[241]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[238]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[235]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[242]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[236]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[242]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[253]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[247]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[246]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[245]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[250]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[244]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[249]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[254]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[255]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[245]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[244]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[247]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[254]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[246]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[248]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[249]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[255]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[256]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[253]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[248]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[256]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[250]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[266]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[269]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[260]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[258]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[25]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[261]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[259]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[25]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[260]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[265]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[267]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[262]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[257]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[261]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[266]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[258]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[267]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[268]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[268]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[262]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[265]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[259]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[257]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[272]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[271]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[271]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[270]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[273]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[274]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[272]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[274]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[270]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[26]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[26]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[273]_1       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[269]_2       |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[27]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[27]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[29]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[29]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[30]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[30]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[28]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[28]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[39]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[32]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[42]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[45]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[37]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[40]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[32]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[51]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[43]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[50]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[46]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[52]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[53]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[33]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[41]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[49]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[33]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[34]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[52]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[39]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[38]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[40]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[38]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[31]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[41]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[42]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[44]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[44]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[45]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[49]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[50]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[37]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[53]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[51]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[31]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[34]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[43]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[46]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[56]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[58]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[56]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[61]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[55]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[54]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[61]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[62]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[54]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[63]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[63]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[62]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[64]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[57]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[55]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[58]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[57]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[64]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[78]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[65]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[77]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[79]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[66]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[65]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[73]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[67]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[79]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[75]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[67]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[68]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[73]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[76]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[76]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[70]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[69]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[69]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[74]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[74]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[75]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[78]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[66]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[77]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[70]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[68]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[93]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[93]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[87]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[88]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[80]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[88]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[85]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[90]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[82]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[91]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[81]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[85]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[89]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[82]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[86]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[86]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[87]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[90]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[92]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[91]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[92]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[80]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[89]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[81]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[94]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[97]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[97]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[99]_2        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[99]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[98]_1        |                1 |              1 |         1.00 |
+|  clkDivider/inst/clk_out1 |                          | gl/grid_reg[98]_2        |                1 |              1 |         1.00 |
+|  score7Seg/slowclk        |                          | clr_IBUF                 |                2 |              2 |         1.00 |
+|  clkDivider/inst/clk_out1 | display/sel              | clr_IBUF                 |                5 |             10 |         2.00 |
+|  clkDivider/inst/clk_out1 | gl/state[5]_i_1_n_0      | clr_IBUF                 |                8 |             12 |         1.50 |
+|  clkDivider/inst/clk_out2 |                          |                          |                8 |             12 |         1.50 |
+|  clkDivider/inst/clk_out1 | gl/score[13]_i_2_n_0     | gl/score[13]_i_1_n_0     |                4 |             14 |         3.50 |
+|  clkDivider/inst/clk_out2 |                          | clr_IBUF                 |                4 |             15 |         3.75 |
+|  clkDivider/inst/clk_out2 |                          | buttons/debBD/PB_idle__0 |                6 |             16 |         2.67 |
+|  clkDivider/inst/clk_out2 |                          | buttons/debBL/PB_idle__0 |                6 |             16 |         2.67 |
+|  clkDivider/inst/clk_out2 |                          | buttons/debBR/PB_idle__0 |               10 |             16 |         1.60 |
+|  clkDivider/inst/clk_out2 |                          | buttons/debBU/PB_idle__0 |                4 |             16 |         4.00 |
+|  clkDivider/inst/clk_out1 | gl/downTimer[23]_i_2_n_0 | gl/downTimer[23]_i_1_n_0 |                6 |             23 |         3.83 |
+|  clkDivider/inst/clk_out1 |                          | clr_IBUF                 |               10 |             26 |         2.60 |
+|  clkDivider/inst/clk_out1 | gl/y1reg[9]_P_i_1_n_0    |                          |               18 |             40 |         2.22 |
+|  clkDivider/inst/clk_out1 | gl/x3reg[9]_P_i_1_n_0    |                          |               31 |             47 |         1.52 |
+|  clkDivider/inst/clk_out1 | gl/y1try[9]_i_1_n_0      |                          |               60 |             80 |         1.33 |
+|  clkDivider/inst/clk_out1 |                          |                          |              254 |            296 |         1.17 |
++---------------------------+--------------------------+--------------------------+------------------+----------------+--------------+
+
+

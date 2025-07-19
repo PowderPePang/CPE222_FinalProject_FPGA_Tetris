@@ -1,0 +1,10 @@
++====================+====================+==========================+
+| Launch Setup Clock | Launch Hold Clock  | Pin                      |
++====================+====================+==========================+
+| clk_out2_vgaCLKDIV | clk_out2_vgaCLKDIV | gl/state_reg[0]/D        |
+| clk_out2_vgaCLKDIV | clk_out2_vgaCLKDIV | gl/state_reg[1]_rep/D    |
+| clk_out2_vgaCLKDIV | clk_out2_vgaCLKDIV | gl/state_reg[2]/D        |
+| clk_out2_vgaCLKDIV | clk_out2_vgaCLKDIV | gl/state_reg[1]_rep__0/D |
+| clk_out2_vgaCLKDIV | clk_out2_vgaCLKDIV | gl/state_reg[1]_rep__1/D |
+| clk_out2_vgaCLKDIV | clk_out2_vgaCLKDIV | gl/state_reg[1]/D        |
++--------------------+--------------------+--------------------------+

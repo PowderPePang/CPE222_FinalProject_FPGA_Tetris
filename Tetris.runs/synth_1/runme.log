@@ -1,0 +1,391 @@
+
+*** Running vivado
+    with args -log TetrisTopModule.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source TetrisTopModule.tcl
+
+
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Fri Dec 13 16:56:09 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source TetrisTopModule.tcl -notrace
+create_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 541.672 ; gain = 231.051
+Command: read_checkpoint -auto_incremental -incremental C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/utils_1/imports/synth_1/gameLogic.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/utils_1/imports/synth_1/gameLogic.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top TetrisTopModule -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 8364
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1000.457 ; gain = 444.750
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'clk_in1_vgaCLKDIV', assumed default net type 'wire' [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/imports/vgaCLKDIV/vgaCLKDIV_clk_wiz.v:82]
+INFO: [Synth 8-11241] undeclared symbol 'clk_out1_vgaCLKDIV', assumed default net type 'wire' [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/imports/vgaCLKDIV/vgaCLKDIV_clk_wiz.v:134]
+INFO: [Synth 8-11241] undeclared symbol 'clk_out2_vgaCLKDIV', assumed default net type 'wire' [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/imports/vgaCLKDIV/vgaCLKDIV_clk_wiz.v:136]
+INFO: [Synth 8-11241] undeclared symbol 'stop', assumed default net type 'wire' [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/TetrisTopModule.v:74]
+INFO: [Synth 8-6157] synthesizing module 'TetrisTopModule' [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/TetrisTopModule.v:3]
+INFO: [Synth 8-6157] synthesizing module 'vgaCLKDIV' [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/imports/vgaCLKDIV/vgaCLKDIV.v:68]
+INFO: [Synth 8-6157] synthesizing module 'vgaCLKDIV_clk_wiz' [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/imports/vgaCLKDIV/vgaCLKDIV_clk_wiz.v:68]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [D:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:73643]
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (0#1) [D:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:73643]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [D:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:82388]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 62.875000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 41.625000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 46 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 6 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (0#1) [D:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:82388]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [D:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:1951]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [D:/Xilinx/Vivado/2024.1/scripts/rt/data/unisim_comp.v:1951]
+INFO: [Synth 8-6155] done synthesizing module 'vgaCLKDIV_clk_wiz' (0#1) [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/imports/vgaCLKDIV/vgaCLKDIV_clk_wiz.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'vgaCLKDIV' (0#1) [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/imports/vgaCLKDIV/vgaCLKDIV.v:68]
+WARNING: [Synth 8-7071] port 'locked' of module 'vgaCLKDIV' is unconnected for instance 'clkDivider' [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/TetrisTopModule.v:42]
+WARNING: [Synth 8-7023] instance 'clkDivider' of module 'vgaCLKDIV' has 5 connections declared, but only 4 given [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/TetrisTopModule.v:42]
+INFO: [Synth 8-6157] synthesizing module 'RandomGen' [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/RandomGen.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'RandomGen' (0#1) [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/RandomGen.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ButtonModule' [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/ButtonModule.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Debouncer' [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/Debouncer.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'Debouncer' (0#1) [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/Debouncer.v:5]
+WARNING: [Synth 8-7071] port 'PB_state' of module 'Debouncer' is unconnected for instance 'debBL' [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/ButtonModule.v:17]
+WARNING: [Synth 8-7071] port 'PB_up' of module 'Debouncer' is unconnected for instance 'debBL' [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/ButtonModule.v:17]
+WARNING: [Synth 8-7023] instance 'debBL' of module 'Debouncer' has 5 connections declared, but only 3 given [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/ButtonModule.v:17]
+WARNING: [Synth 8-7071] port 'PB_state' of module 'Debouncer' is unconnected for instance 'debBR' [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/ButtonModule.v:23]
+WARNING: [Synth 8-7071] port 'PB_up' of module 'Debouncer' is unconnected for instance 'debBR' [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/ButtonModule.v:23]
+WARNING: [Synth 8-7023] instance 'debBR' of module 'Debouncer' has 5 connections declared, but only 3 given [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/ButtonModule.v:23]
+WARNING: [Synth 8-7071] port 'PB_state' of module 'Debouncer' is unconnected for instance 'debBD' [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/ButtonModule.v:29]
+WARNING: [Synth 8-7071] port 'PB_up' of module 'Debouncer' is unconnected for instance 'debBD' [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/ButtonModule.v:29]
+WARNING: [Synth 8-7023] instance 'debBD' of module 'Debouncer' has 5 connections declared, but only 3 given [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/ButtonModule.v:29]
+WARNING: [Synth 8-7071] port 'PB_state' of module 'Debouncer' is unconnected for instance 'debBU' [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/ButtonModule.v:35]
+WARNING: [Synth 8-7071] port 'PB_up' of module 'Debouncer' is unconnected for instance 'debBU' [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/ButtonModule.v:35]
+WARNING: [Synth 8-7023] instance 'debBU' of module 'Debouncer' has 5 connections declared, but only 3 given [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/ButtonModule.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'ButtonModule' (0#1) [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/ButtonModule.v:3]
+INFO: [Synth 8-6157] synthesizing module 'GameLogicV2' [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/GameLogicV2.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/GameLogicV2.v:126]
+INFO: [Synth 8-6155] done synthesizing module 'GameLogicV2' (0#1) [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/GameLogicV2.v:3]
+INFO: [Synth 8-6157] synthesizing module 'GameDisplay' [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/GameDisplay.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'GameDisplay' (0#1) [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/GameDisplay.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ScoreDisplay' [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/ScoreDisplay.v:9]
+INFO: [Synth 8-226] default block is never used [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/ScoreDisplay.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'ScoreDisplay' (0#1) [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/ScoreDisplay.v:9]
+WARNING: [Synth 8-7071] port 'dp' of module 'ScoreDisplay' is unconnected for instance 'score7Seg' [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/TetrisTopModule.v:101]
+WARNING: [Synth 8-7023] instance 'score7Seg' of module 'ScoreDisplay' has 6 connections declared, but only 5 given [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/TetrisTopModule.v:101]
+INFO: [Synth 8-6155] done synthesizing module 'TetrisTopModule' (0#1) [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/TetrisTopModule.v:3]
+WARNING: [Synth 8-7137] Register grid_reg in module GameLogicV2 has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/GameLogicV2.v:131]
+WARNING: [Synth 8-7137] Register score_reg in module GameLogicV2 has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/GameLogicV2.v:143]
+WARNING: [Synth 8-7137] Register downTimer_reg in module GameLogicV2 has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/GameLogicV2.v:144]
+WARNING: [Synth 8-7137] Register gameOver_reg in module GameLogicV2 has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/GameLogicV2.v:145]
+WARNING: [Synth 8-7137] Register x1reg_reg in module GameLogicV2 has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/GameLogicV2.v:152]
+WARNING: [Synth 8-7137] Register y1reg_reg in module GameLogicV2 has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/GameLogicV2.v:153]
+WARNING: [Synth 8-7137] Register x2reg_reg in module GameLogicV2 has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/GameLogicV2.v:154]
+WARNING: [Synth 8-7137] Register y2reg_reg in module GameLogicV2 has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/GameLogicV2.v:155]
+WARNING: [Synth 8-7137] Register x3reg_reg in module GameLogicV2 has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/GameLogicV2.v:156]
+WARNING: [Synth 8-7137] Register y3reg_reg in module GameLogicV2 has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/GameLogicV2.v:157]
+WARNING: [Synth 8-7137] Register x4reg_reg in module GameLogicV2 has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/GameLogicV2.v:158]
+WARNING: [Synth 8-7137] Register y4reg_reg in module GameLogicV2 has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/GameLogicV2.v:159]
+WARNING: [Synth 8-7137] Register currentBlock_reg in module GameLogicV2 has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/GameLogicV2.v:160]
+WARNING: [Synth 8-7137] Register rotState1Bit_reg in module GameLogicV2 has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/GameLogicV2.v:248]
+WARNING: [Synth 8-7137] Register rotState2Bit_reg in module GameLogicV2 has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/GameLogicV2.v:249]
+WARNING: [Synth 8-7137] Register x1try_reg in module GameLogicV2 has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/GameLogicV2.v:263]
+WARNING: [Synth 8-7137] Register y1try_reg in module GameLogicV2 has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/GameLogicV2.v:264]
+WARNING: [Synth 8-7137] Register x2try_reg in module GameLogicV2 has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/GameLogicV2.v:265]
+WARNING: [Synth 8-7137] Register y2try_reg in module GameLogicV2 has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/GameLogicV2.v:266]
+WARNING: [Synth 8-7137] Register x3try_reg in module GameLogicV2 has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/GameLogicV2.v:267]
+WARNING: [Synth 8-7137] Register y3try_reg in module GameLogicV2 has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/GameLogicV2.v:268]
+WARNING: [Synth 8-7137] Register x4try_reg in module GameLogicV2 has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/GameLogicV2.v:269]
+WARNING: [Synth 8-7137] Register y4try_reg in module GameLogicV2 has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/GameLogicV2.v:270]
+WARNING: [Synth 8-3936] Found unconnected internal register 'grid_reg' and it is trimmed from '288' to '275' bits. [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/GameDisplay.v:122]
+WARNING: [Synth 8-7137] Register grid_reg in module GameDisplay has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/GameDisplay.v:122]
+WARNING: [Synth 8-3848] Net stop in module/entity TetrisTopModule does not have driver. [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/sources_1/new/TetrisTopModule.v:74]
+WARNING: [Synth 8-7129] Port inputGrid[287] in module GameDisplay is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inputGrid[286] in module GameDisplay is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inputGrid[285] in module GameDisplay is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inputGrid[284] in module GameDisplay is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inputGrid[283] in module GameDisplay is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inputGrid[282] in module GameDisplay is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inputGrid[281] in module GameDisplay is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inputGrid[280] in module GameDisplay is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inputGrid[279] in module GameDisplay is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inputGrid[278] in module GameDisplay is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inputGrid[277] in module GameDisplay is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inputGrid[276] in module GameDisplay is either unconnected or has no load
+WARNING: [Synth 8-7129] Port inputGrid[275] in module GameDisplay is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 1196.375 ; gain = 640.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 1196.375 ; gain = 640.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 1196.375 ; gain = 640.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1196.375 ; gain = 640.668
+---------------------------------------------------------------------------------
+INFO: [Device 21-9227] Part: xc7a35tcpg236-1 does not have CEAM library.
+TetrisTopModule__GC0GameLogicV2__GB3GameLogicV2__GB2GameLogicV2__GB1GameLogicV2__GB0vgaCLKDIV_clk_wiz__GC---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 1196.375 ; gain = 640.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1196.375 ; gain = 640.668
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Mimic Skeleton from Reference
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Mimic Skeleton from Reference : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1196.375 ; gain = 640.668
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: yes
+
+   Stitch points used : changed
+
+
+2. Change Summary
+
+Report Incremental Modules: 
++-+----------------+------------+----------+----------+
+| |Changed Modules |Replication |Instances |Changed % |
++-+----------------+------------+----------+----------+
++-+----------------+------------+----------+----------+
+
+
+   Full Design Size (number of cells) : 125746
+   Resynthesis Design Size (number of cells) : 1
+   Resynth % : 0.0008,  Reuse % : 99.9992
+
+3. Reference Checkpoint Information
+
++-------------------------------------------------------------------------------------------------------------------------+
+| DCP Location:  | C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/utils_1/imports/synth_1/gameLogic.dcp |
++-------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------+------------------------------+
+|         DCP Information        |             Value            |
++--------------------------------+------------------------------+
+| Vivado Version                 |                    v2024.1 |
+| DCP State                      |                              |
++--------------------------------+------------------------------+
+
+
+
+Report RTL Partitions: 
++------+------------------------------+------------+----------+
+|      |RTL Partition                 |Replication |Instances |
++------+------------------------------+------------+----------+
+|1     |vgaCLKDIV_clk_wiz__GC_#REUSE# |           1|         0|
+|2     |GameLogicV2__GB0_#REUSE#      |           1|         0|
+|3     |GameLogicV2__GB1_#REUSE#      |           1|         0|
+|4     |GameLogicV2__GB2_#REUSE#      |           1|         0|
+|5     |GameLogicV2__GB3_#REUSE#      |           1|         0|
+|6     |TetrisTopModule__GC0_#REUSE#  |           1|         0|
++------+------------------------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7077] IncrSyn: subsequent runs will still be incremental as the reference run was parallel and that data is reused
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:52 . Memory (MB): peak = 1330.645 ; gain = 774.938
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Stitch Unchanged AreaOpt Partitions
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Stitch Unchanged AreaOpt Partitions : Time (s): cpu = 00:00:34 ; elapsed = 00:00:53 . Memory (MB): peak = 1330.645 ; gain = 774.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:53 . Memory (MB): peak = 1330.645 ; gain = 774.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7077] IncrSyn: subsequent runs will still be incremental as the reference run was parallel and that data is reused
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:53 . Memory (MB): peak = 1330.645 ; gain = 774.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Stitch Unchanged Partitions
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Stitch Unchanged Partitions : Time (s): cpu = 00:00:35 ; elapsed = 00:00:54 . Memory (MB): peak = 1330.645 ; gain = 774.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:47 ; elapsed = 00:01:06 . Memory (MB): peak = 1341.863 ; gain = 786.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:47 ; elapsed = 00:01:06 . Memory (MB): peak = 1341.863 ; gain = 786.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:47 ; elapsed = 00:01:06 . Memory (MB): peak = 1341.863 ; gain = 786.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:47 ; elapsed = 00:01:07 . Memory (MB): peak = 1341.863 ; gain = 786.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:50 ; elapsed = 00:01:09 . Memory (MB): peak = 1341.863 ; gain = 786.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:50 ; elapsed = 00:01:09 . Memory (MB): peak = 1341.863 ; gain = 786.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     3|
+|2     |CARRY4     |   133|
+|3     |LUT1       |    45|
+|4     |LUT2       |   983|
+|5     |LUT3       |   872|
+|6     |LUT4       |   792|
+|7     |LUT5       |  2241|
+|8     |LUT6       |  6005|
+|9     |MMCME2_ADV |     1|
+|10    |MUXF7      |   848|
+|11    |MUXF8      |   235|
+|12    |FDCE       |   273|
+|13    |FDPE       |   212|
+|14    |FDRE       |   577|
+|15    |LDC        |   210|
+|16    |IBUF       |     6|
+|17    |OBUF       |    25|
++------+-----------+------+
+
+Report Instance Areas: 
++------+-----------------+------------------+------+
+|      |Instance         |Module            |Cells |
++------+-----------------+------------------+------+
+|1     |top              |                  | 13461|
+|2     |  buttons        |ButtonModule      |   129|
+|3     |    debBD        |Debouncer         |    32|
+|4     |    debBL        |Debouncer_0       |    32|
+|5     |    debBR        |Debouncer_1       |    32|
+|6     |    debBU        |Debouncer_2       |    33|
+|7     |  clkDivider     |vgaCLKDIV         |     5|
+|8     |    inst         |vgaCLKDIV_clk_wiz |     5|
+|9     |  display        |GameDisplay       |  1236|
+|10    |  gl             |GameLogicV2       | 11923|
+|11    |  rand_NextBlock |RandomGen         |    25|
+|12    |  score7Seg      |ScoreDisplay      |   113|
++------+-----------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:50 ; elapsed = 00:01:09 . Memory (MB): peak = 1341.863 ; gain = 786.156
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 59 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:50 ; elapsed = 00:01:09 . Memory (MB): peak = 1341.863 ; gain = 786.156
+Synthesis Optimization Complete : Time (s): cpu = 00:00:50 ; elapsed = 00:01:09 . Memory (MB): peak = 1341.863 ; gain = 786.156
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.168 . Memory (MB): peak = 1353.918 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1427 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'TetrisTopModule' is not ideal for floorplanning, since the cellview 'GameLogicV2' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1452.953 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 210 instances were transformed.
+  LDC => LDCE: 210 instances
+
+Synth Design complete | Checksum: 5a3a323a
+INFO: [Common 17-83] Releasing license: Synthesis
+45 Infos, 60 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:57 ; elapsed = 00:01:19 . Memory (MB): peak = 1452.953 ; gain = 905.543
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.091 . Memory (MB): peak = 1452.953 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.runs/synth_1/TetrisTopModule.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file TetrisTopModule_utilization_synth.rpt -pb TetrisTopModule_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 13 16:57:53 2024...

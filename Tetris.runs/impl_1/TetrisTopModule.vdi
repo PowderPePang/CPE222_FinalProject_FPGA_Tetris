@@ -1,0 +1,1161 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Fri Dec 13 16:58:06 2024
+# Process ID: 8504
+# Current directory: C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.runs/impl_1
+# Command line: vivado.exe -log TetrisTopModule.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source TetrisTopModule.tcl -notrace
+# Log file: C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.runs/impl_1/TetrisTopModule.vdi
+# Journal file: C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.runs/impl_1\vivado.jou
+# Running On        :ACER-i7-Notebook
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22000
+# Processor Detail  :Intel(R) Core(TM) i7-5500U CPU @ 2.40GHz
+# CPU Frequency     :2400 MHz
+# CPU Physical cores:2
+# CPU Logical cores :4
+# Host memory       :17090 MB
+# Swap memory       :2550 MB
+# Total Virtual     :19640 MB
+# Available Virtual :7846 MB
+#-----------------------------------------------------------
+source TetrisTopModule.tcl -notrace
+create_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 544.383 ; gain = 237.703
+Command: link_design -top TetrisTopModule -part xc7a35tcpg236-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Device 21-9227] Part: xc7a35tcpg236-1 does not have CEAM library.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.195 . Memory (MB): peak = 944.770 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1217 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'TetrisTopModule' is not ideal for floorplanning, since the cellview 'GameLogicV2' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2024.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/constrs_1/new/basys3_master.xdc]
+Finished Parsing XDC File [C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.srcs/constrs_1/new/basys3_master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1092.941 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+8 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1096.941 ; gain = 552.559
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1119.312 ; gain = 22.371
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-2] Deriving generated clocks
+Ending Cache Timing Information Task | Checksum: 1cb5afc78
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1668.387 ; gain = 549.074
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 1cb5afc78
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 2045.527 ; gain = 0.000
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 1cb5afc78
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 2045.527 ; gain = 0.000
+Phase 1 Initialization | Checksum: 1cb5afc78
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 2045.527 ; gain = 0.000
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+Phase 2.1 Timer Update | Checksum: 1cb5afc78
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.499 . Memory (MB): peak = 2045.527 ; gain = 0.000
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: 1cb5afc78
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.593 . Memory (MB): peak = 2045.527 ; gain = 0.000
+Phase 2 Timer Update And Timing Data Collection | Checksum: 1cb5afc78
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.597 . Memory (MB): peak = 2045.527 ; gain = 0.000
+
+Phase 3 Retarget
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-1566] Pulled 6 inverters resulting in an inversion of 27 pins
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 19fca3368
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2045.527 ; gain = 0.000
+Retarget | Checksum: 19fca3368
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 6 cells
+INFO: [Opt 31-1021] In phase Retarget, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 200afd186
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2045.527 ; gain = 0.000
+Constant propagation | Checksum: 200afd186
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 5 Sweep
+Phase 5 Sweep | Checksum: 1dc8c2584
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2045.527 ; gain = 0.000
+Sweep | Checksum: 1dc8c2584
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 6 BUFG optimization
+Phase 6 BUFG optimization | Checksum: 1dc8c2584
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2045.527 ; gain = 0.000
+BUFG optimization | Checksum: 1dc8c2584
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 1dc8c2584
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2045.527 ; gain = 0.000
+Shift Register Optimization | Checksum: 1dc8c2584
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 1dc8c2584
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2045.527 ; gain = 0.000
+Post Processing Netlist | Checksum: 1dc8c2584
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 19da045b5
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2045.527 ; gain = 0.000
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 2045.527 ; gain = 0.000
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 19da045b5
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2045.527 ; gain = 0.000
+Phase 9 Finalization | Checksum: 19da045b5
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2045.527 ; gain = 0.000
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               6  |                                              1  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 19da045b5
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2045.527 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 19da045b5
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.127 . Memory (MB): peak = 2045.527 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 19da045b5
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2045.527 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2045.527 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 19da045b5
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2045.527 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+29 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 2045.527 ; gain = 948.586
+INFO: [Vivado 12-24828] Executing command : report_drc -file TetrisTopModule_drc_opted.rpt -pb TetrisTopModule_drc_opted.pb -rpx TetrisTopModule_drc_opted.rpx
+Command: report_drc -file TetrisTopModule_drc_opted.rpt -pb TetrisTopModule_drc_opted.pb -rpx TetrisTopModule_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2024.1/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.runs/impl_1/TetrisTopModule_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2045.527 ; gain = 0.000
+generate_parallel_reports: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2045.527 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2045.527 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2045.527 ; gain = 0.000
+Writing XDEF routing.
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.106 . Memory (MB): peak = 2045.527 ; gain = 0.000
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.371 . Memory (MB): peak = 2045.527 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2045.527 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2045.527 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.431 . Memory (MB): peak = 2045.527 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.runs/impl_1/TetrisTopModule_opt.dcp' has been generated.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 2045.527 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 182fbcd4c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.087 . Memory (MB): peak = 2045.527 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 2045.527 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1462a3090
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2045.527 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 243866fb3
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2045.527 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 243866fb3
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2045.527 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 243866fb3
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 2045.527 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 16ef4d41b
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 2045.527 ; gain = 0.000
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 174fc263c
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 2045.527 ; gain = 0.000
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 174fc263c
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 2045.527 ; gain = 0.000
+
+Phase 2.4 Global Placement Core
+
+Phase 2.4.1 UpdateTiming Before Physical Synthesis
+Phase 2.4.1 UpdateTiming Before Physical Synthesis | Checksum: 21f66c6ab
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:16 . Memory (MB): peak = 2045.527 ; gain = 0.000
+
+Phase 2.4.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 1 LUTNM shape to break, 91 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 1, two critical 0, total 1, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 29 nets or LUTs. Breaked 1 LUT, combined 28 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1401] No candidate cells found for Shift Register optimization.
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2045.527 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            1  |             28  |                    29  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            1  |             28  |                    29  |           0  |           9  |  00:00:01  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.4.2 Physical Synthesis In Placer | Checksum: 270e37727
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:19 . Memory (MB): peak = 2045.527 ; gain = 0.000
+Phase 2.4 Global Placement Core | Checksum: 1f8de4381
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:20 . Memory (MB): peak = 2045.527 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 1f8de4381
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:20 . Memory (MB): peak = 2045.527 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 29f793386
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:21 . Memory (MB): peak = 2045.527 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1ab79c91d
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:24 . Memory (MB): peak = 2045.527 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 2329679e1
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:24 . Memory (MB): peak = 2045.527 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 1ecdeee08
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:24 . Memory (MB): peak = 2045.527 ; gain = 0.000
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 1deff4b6e
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:27 . Memory (MB): peak = 2045.527 ; gain = 0.000
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 3162aca09
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:34 . Memory (MB): peak = 2045.527 ; gain = 0.000
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 3198ffc53
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:35 . Memory (MB): peak = 2045.527 ; gain = 0.000
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 1de478b6e
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:36 . Memory (MB): peak = 2045.527 ; gain = 0.000
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 2501b37e1
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:40 . Memory (MB): peak = 2045.527 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 2501b37e1
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:41 . Memory (MB): peak = 2045.527 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 2e91d92d0
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-6.709 | TNS=-34.737 |
+Phase 1 Physical Synthesis Initialization | Checksum: 18c405880
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.366 . Memory (MB): peak = 2056.344 ; gain = 0.000
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
+Ending Physical Synthesis Task | Checksum: 213391dce
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.449 . Memory (MB): peak = 2056.344 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 2e91d92d0
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:44 . Memory (MB): peak = 2056.344 ; gain = 10.816
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-5.400. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 2982345d5
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:01:02 . Memory (MB): peak = 2056.344 ; gain = 10.816
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:01:02 . Memory (MB): peak = 2056.344 ; gain = 10.816
+Phase 4.1 Post Commit Optimization | Checksum: 2982345d5
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:01:02 . Memory (MB): peak = 2056.344 ; gain = 10.816
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 2982345d5
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:01:03 . Memory (MB): peak = 2056.344 ; gain = 10.816
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                1x1|                4x4|
+|___________|___________________|___________________|
+|      South|                1x1|                1x1|
+|___________|___________________|___________________|
+|       East|                1x1|                1x1|
+|___________|___________________|___________________|
+|       West|                1x1|                1x1|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 2982345d5
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:01:03 . Memory (MB): peak = 2056.344 ; gain = 10.816
+Phase 4.3 Placer Reporting | Checksum: 2982345d5
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:01:03 . Memory (MB): peak = 2056.344 ; gain = 10.816
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2056.344 ; gain = 0.000
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:01:03 . Memory (MB): peak = 2056.344 ; gain = 10.816
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 2584c4eff
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:01:03 . Memory (MB): peak = 2056.344 ; gain = 10.816
+Ending Placer Task | Checksum: 1d568e0f9
+
+Time (s): cpu = 00:01:23 ; elapsed = 00:01:03 . Memory (MB): peak = 2056.344 ; gain = 10.816
+74 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:01:27 ; elapsed = 00:01:07 . Memory (MB): peak = 2056.344 ; gain = 10.816
+INFO: [Vivado 12-24838] Running report commands "report_control_sets, report_io, report_utilization" in parallel.
+Running report generation with 2 threads.
+INFO: [Vivado 12-24828] Executing command : report_io -file TetrisTopModule_io_placed.rpt
+report_io: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.072 . Memory (MB): peak = 2056.344 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_control_sets -verbose -file TetrisTopModule_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 2056.344 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_utilization -file TetrisTopModule_utilization_placed.rpt -pb TetrisTopModule_utilization_placed.pb
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.085 . Memory (MB): peak = 2070.859 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2072.820 ; gain = 1.961
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2072.820 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 2072.820 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.043 . Memory (MB): peak = 2072.820 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 2072.820 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2072.820 ; gain = 1.961
+INFO: [Common 17-1381] The checkpoint 'C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.runs/impl_1/TetrisTopModule_placed.dcp' has been generated.
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2112.488 ; gain = 39.668
+INFO: [Vivado_Tcl 4-1435] PhysOpt_Tcl_Interface Runtime Before Starting Physical Synthesis Task | CPU: 4.00s |  WALL: 2.36s
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2112.539 ; gain = 0.051
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.400 | TNS=-29.944 |
+Phase 1 Physical Synthesis Initialization | Checksum: 17da9b3f5
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2118.441 ; gain = 5.902
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.400 | TNS=-29.944 |
+
+Phase 2 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 2 DSP Register Optimization | Checksum: 17da9b3f5
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2118.441 ; gain = 5.902
+
+Phase 3 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.400 | TNS=-29.944 |
+INFO: [Physopt 32-702] Processed net gl/state_reg_n_0_[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net clkDivider/inst/clk_out2_vgaCLKDIV. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net gl/state[1]_i_3_n_0.  Re-placed instance gl/state[1]_i_3
+INFO: [Physopt 32-735] Processed net gl/state[1]_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.197 | TNS=-29.382 |
+INFO: [Physopt 32-702] Processed net gl/state_reg[1]_rep__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net gl/state[1]_rep_i_1__1_n_0. Critical path length was reduced through logic transformation on cell gl/state[1]_rep_i_1__1_comp.
+INFO: [Physopt 32-735] Processed net gl/state[1]_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.191 | TNS=-28.915 |
+INFO: [Physopt 32-710] Processed net gl/state[1]_i_1_n_0. Critical path length was reduced through logic transformation on cell gl/state[1]_i_1_comp.
+INFO: [Physopt 32-735] Processed net gl/state[1]_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.189 | TNS=-28.490 |
+INFO: [Physopt 32-702] Processed net gl/state_reg[1]_rep_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net gl/state[1]_i_3_n_0.  Re-placed instance gl/state[1]_i_3
+INFO: [Physopt 32-735] Processed net gl/state[1]_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.102 | TNS=-28.316 |
+INFO: [Physopt 32-710] Processed net gl/state[1]_rep_i_1_n_0. Critical path length was reduced through logic transformation on cell gl/state[1]_rep_i_1_comp.
+INFO: [Physopt 32-735] Processed net gl/state[1]_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-5.092 | TNS=-27.860 |
+INFO: [Physopt 32-702] Processed net gl/state_reg[1]_rep__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net gl/state[1]_rep_i_1__0_n_0. Critical path length was reduced through logic transformation on cell gl/state[1]_rep_i_1__0_comp.
+INFO: [Physopt 32-735] Processed net gl/state[1]_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.899 | TNS=-27.667 |
+INFO: [Physopt 32-710] Processed net gl/state[1]_rep_i_1__0_n_0. Critical path length was reduced through logic transformation on cell gl/state[1]_rep_i_1__0_comp_1.
+INFO: [Physopt 32-735] Processed net gl/state[1]_i_8_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.766 | TNS=-27.117 |
+INFO: [Physopt 32-710] Processed net gl/state[1]_i_1_n_0. Critical path length was reduced through logic transformation on cell gl/state[1]_i_1_comp_1.
+INFO: [Physopt 32-735] Processed net gl/state[1]_i_8_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.728 | TNS=-26.699 |
+INFO: [Physopt 32-710] Processed net gl/state[1]_rep_i_1__1_n_0. Critical path length was reduced through logic transformation on cell gl/state[1]_rep_i_1__1_comp_1.
+INFO: [Physopt 32-735] Processed net gl/state[1]_i_8_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.632 | TNS=-26.281 |
+INFO: [Physopt 32-702] Processed net gl/state[1]_i_8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net gl/state[1]_i_8_n_0. Critical path length was reduced through logic transformation on cell gl/state[1]_i_8_comp_3.
+INFO: [Physopt 32-735] Processed net gl/state[0]_i_6_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.581 | TNS=-26.052 |
+INFO: [Physopt 32-702] Processed net gl/state_reg_n_0_[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net gl/state[0]_i_1_n_0. Critical path length was reduced through logic transformation on cell gl/state[0]_i_1_comp.
+INFO: [Physopt 32-735] Processed net gl/state[0]_i_4_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.384 | TNS=-25.634 |
+INFO: [Physopt 32-710] Processed net gl/state[1]_i_8_n_0. Critical path length was reduced through logic transformation on cell gl/state[1]_i_8_comp_4.
+INFO: [Physopt 32-735] Processed net gl/downTimer_reg[18]_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.356 | TNS=-25.316 |
+INFO: [Physopt 32-663] Processed net gl/state[0]_i_6_n_0.  Re-placed instance gl/state[0]_i_6
+INFO: [Physopt 32-735] Processed net gl/state[0]_i_6_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.348 | TNS=-25.442 |
+INFO: [Physopt 32-710] Processed net gl/state[1]_rep_i_1__1_n_0. Critical path length was reduced through logic transformation on cell gl/state[1]_rep_i_1__1_comp.
+INFO: [Physopt 32-735] Processed net gl/state[0]_i_6_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.339 | TNS=-25.298 |
+INFO: [Physopt 32-710] Processed net gl/state[1]_i_1_n_0. Critical path length was reduced through logic transformation on cell gl/state[1]_i_1_comp.
+INFO: [Physopt 32-735] Processed net gl/state[0]_i_6_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.331 | TNS=-25.034 |
+INFO: [Physopt 32-710] Processed net gl/state[1]_rep_i_1__0_n_0. Critical path length was reduced through logic transformation on cell gl/state[1]_rep_i_1__0_comp.
+INFO: [Physopt 32-735] Processed net gl/state[0]_i_6_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.286 | TNS=-24.730 |
+INFO: [Physopt 32-663] Processed net gl/state[0]_i_6_n_0.  Re-placed instance gl/state[0]_i_6
+INFO: [Physopt 32-735] Processed net gl/state[0]_i_6_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.194 | TNS=-24.604 |
+INFO: [Physopt 32-663] Processed net gl/state[1]_i_8_n_0_repN_2.  Re-placed instance gl/state[1]_i_8_comp_2
+INFO: [Physopt 32-735] Processed net gl/state[1]_i_8_n_0_repN_2. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.160 | TNS=-24.278 |
+INFO: [Physopt 32-710] Processed net gl/state[0]_i_1_n_0. Critical path length was reduced through logic transformation on cell gl/state[0]_i_1_comp_1.
+INFO: [Physopt 32-735] Processed net gl/state[0]_i_6_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.100 | TNS=-23.988 |
+INFO: [Physopt 32-702] Processed net gl/state_reg[2]_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net gl/state[2]_i_1_n_0. Critical path length was reduced through logic transformation on cell gl/state[2]_i_1_comp.
+INFO: [Physopt 32-735] Processed net buttons/debBU/state_reg[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.071 | TNS=-23.931 |
+INFO: [Physopt 32-663] Processed net gl/state[1]_i_8_n_0_repN_1.  Re-placed instance gl/state[1]_i_8_comp_1
+INFO: [Physopt 32-735] Processed net gl/state[1]_i_8_n_0_repN_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.046 | TNS=-23.656 |
+INFO: [Physopt 32-702] Processed net buttons/debBL/left. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net buttons/debBL/PB_state_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net gl/state[1]_rep_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net buttons/debBL/PB_cnt_reg[13]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net buttons/debBL/PB_cnt_reg[13]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.043 | TNS=-23.626 |
+INFO: [Physopt 32-702] Processed net gl/downTimer_reg[18]_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net gl/downTimer_reg[18]_0. Critical path length was reduced through logic transformation on cell gl/state[2]_i_6_comp_1.
+INFO: [Physopt 32-735] Processed net buttons/debBD/down. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.036 | TNS=-22.936 |
+INFO: [Physopt 32-702] Processed net buttons/debBL/PB_cnt_reg[13]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net gl/state_reg[1]_rep_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net clkDivider/inst/clk_out2_vgaCLKDIV. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net gl/state[1]_i_8_n_0.  Re-placed instance gl/state[1]_i_8_comp_4
+INFO: [Physopt 32-735] Processed net gl/state[1]_i_8_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-4.020 | TNS=-22.868 |
+INFO: [Physopt 32-702] Processed net gl/state_reg[1]_rep__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net gl/state[1]_i_8_n_0_repN.  Re-placed instance gl/state[1]_i_8_comp
+INFO: [Physopt 32-735] Processed net gl/state[1]_i_8_n_0_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.968 | TNS=-22.715 |
+INFO: [Physopt 32-702] Processed net gl/state[1]_i_8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net buttons/debBL/left. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net buttons/debBL/PB_state_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net gl/state[1]_rep_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net buttons/debBL/PB_cnt_reg[13]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.968 | TNS=-22.715 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.098 . Memory (MB): peak = 2124.477 ; gain = 0.000
+Phase 3 Critical Path Optimization | Checksum: 1b63c9b15
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 2124.477 ; gain = 11.938
+
+Phase 4 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.968 | TNS=-22.715 |
+INFO: [Physopt 32-702] Processed net gl/state_reg[1]_rep_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net clkDivider/inst/clk_out2_vgaCLKDIV. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net gl/state[1]_rep_i_1_n_0. Critical path length was reduced through logic transformation on cell gl/state[1]_rep_i_1_comp_1.
+INFO: [Physopt 32-735] Processed net gl/state[1]_i_8_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.867 | TNS=-22.588 |
+INFO: [Physopt 32-702] Processed net gl/state_reg[1]_rep__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net gl/state[1]_rep_i_1__0_n_0. Critical path length was reduced through logic transformation on cell gl/state[1]_rep_i_1__0_comp_2.
+INFO: [Physopt 32-735] Processed net gl/state[1]_i_8_n_0_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.858 | TNS=-22.313 |
+INFO: [Physopt 32-702] Processed net gl/state_reg[1]_rep__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net gl/state[1]_i_8_n_0_repN_2.  Re-placed instance gl/state[1]_i_8_comp_2
+INFO: [Physopt 32-735] Processed net gl/state[1]_i_8_n_0_repN_2. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.855 | TNS=-22.310 |
+INFO: [Physopt 32-702] Processed net gl/state[1]_i_8_n_0_repN_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net gl/state[1]_i_8_n_0_repN_2. Critical path length was reduced through logic transformation on cell gl/state[1]_i_8_comp.
+INFO: [Physopt 32-735] Processed net buttons/debBL/left. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.841 | TNS=-22.149 |
+INFO: [Physopt 32-663] Processed net gl/state[1]_i_8_n_0.  Re-placed instance gl/state[1]_i_8_comp_5
+INFO: [Physopt 32-735] Processed net gl/state[1]_i_8_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.735 | TNS=-21.673 |
+INFO: [Physopt 32-702] Processed net gl/state_reg_n_0_[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net gl/state[1]_i_1_n_0. Critical path length was reduced through logic transformation on cell gl/state[1]_i_1_comp_2.
+INFO: [Physopt 32-735] Processed net gl/state[1]_i_8_n_0_repN_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.719 | TNS=-21.399 |
+INFO: [Physopt 32-702] Processed net gl/state_reg[2]_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net buttons/debBU/state_reg[2].  Re-placed instance buttons/debBU/state[2]_i_2_comp
+INFO: [Physopt 32-735] Processed net buttons/debBU/state_reg[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.708 | TNS=-21.388 |
+INFO: [Physopt 32-663] Processed net gl/downTimer_reg[18]_0.  Re-placed instance gl/state[2]_i_6_comp_1
+INFO: [Physopt 32-735] Processed net gl/downTimer_reg[18]_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.691 | TNS=-21.099 |
+INFO: [Physopt 32-710] Processed net gl/state[1]_i_8_n_0_repN_2. Critical path length was reduced through logic transformation on cell gl/state[1]_i_8_comp_8.
+INFO: [Physopt 32-735] Processed net buttons/debBL/left_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.651 | TNS=-20.951 |
+INFO: [Physopt 32-81] Processed net gl/downTimer_reg[18]_0. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net gl/downTimer_reg[18]_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.643 | TNS=-20.799 |
+INFO: [Physopt 32-710] Processed net gl/state[2]_i_1_n_0. Critical path length was reduced through logic transformation on cell gl/state[2]_i_1_comp_1.
+INFO: [Physopt 32-735] Processed net buttons/debBU/state_reg[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.568 | TNS=-20.586 |
+INFO: [Physopt 32-702] Processed net gl/state_reg_n_0_[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net buttons/debBU/up. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net buttons/debBU/up. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.543 | TNS=-20.587 |
+INFO: [Physopt 32-663] Processed net buttons/debBL/PB_state_i_4_n_0.  Re-placed instance buttons/debBL/PB_state_i_4
+INFO: [Physopt 32-735] Processed net buttons/debBL/PB_state_i_4_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.541 | TNS=-20.585 |
+INFO: [Physopt 32-702] Processed net buttons/debBL/left_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net buttons/debBL/left_repN. Critical path length was reduced through logic transformation on cell buttons/debBL/state[2]_i_5_comp.
+INFO: [Physopt 32-735] Processed net buttons/debBL/PB_state_i_3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.532 | TNS=-20.565 |
+INFO: [Physopt 32-663] Processed net buttons/debBU/up.  Re-placed instance buttons/debBU/state[2]_i_3
+INFO: [Physopt 32-735] Processed net buttons/debBU/up. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.517 | TNS=-20.550 |
+INFO: [Physopt 32-663] Processed net buttons/debBU/up.  Re-placed instance buttons/debBU/state[2]_i_3
+INFO: [Physopt 32-735] Processed net buttons/debBU/up. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.517 | TNS=-20.529 |
+INFO: [Physopt 32-702] Processed net buttons/debBR/right. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net buttons/debBR/PB_state_i_2__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net gl/state[1]_rep_i_1__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net buttons/debBR/PB_cnt_reg[8]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net gl/state_reg[1]_rep__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net clkDivider/inst/clk_out2_vgaCLKDIV. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net gl/state[1]_i_8_n_0_repN_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net buttons/debBR/right. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net buttons/debBR/PB_state_i_2__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net gl/state[1]_rep_i_1__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net buttons/debBR/PB_cnt_reg[8]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-3.517 | TNS=-20.529 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.091 . Memory (MB): peak = 2124.480 ; gain = 0.000
+Phase 4 Critical Path Optimization | Checksum: 1b63c9b15
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 2124.480 ; gain = 11.941
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 2124.480 ; gain = 0.000
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-3.517 | TNS=-20.529 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Path  |          1.883  |          9.415  |            3  |              0  |                    41  |           0  |           2  |  00:00:10  |
+|  Total          |          1.883  |          9.415  |            3  |              0  |                    41  |           0  |           3  |  00:00:10  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2124.480 ; gain = 0.000
+Ending Physical Synthesis Task | Checksum: 2990ab717
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 2124.480 ; gain = 11.941
+INFO: [Common 17-83] Releasing license: Implementation
+257 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:14 . Memory (MB): peak = 2124.480 ; gain = 51.660
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.072 . Memory (MB): peak = 2131.562 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2133.500 ; gain = 1.938
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2133.500 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 2133.500 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 2133.500 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2133.500 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2133.500 ; gain = 1.938
+INFO: [Common 17-1381] The checkpoint 'C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.runs/impl_1/TetrisTopModule_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: ac31fe5f ConstDB: 0 ShapeSum: b17c0927 RouteDB: a0815c57
+Post Restoration Checksum: NetGraph: d5a777b0 | NumContArr: c58ae651 | Constraints: c2a8fa9d | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 32084533b
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:40 . Memory (MB): peak = 2215.293 ; gain = 72.238
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 32084533b
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:40 . Memory (MB): peak = 2215.293 ; gain = 72.238
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 32084533b
+
+Time (s): cpu = 00:00:45 ; elapsed = 00:00:40 . Memory (MB): peak = 2215.293 ; gain = 72.238
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: 25182378d
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:48 . Memory (MB): peak = 2257.004 ; gain = 113.949
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.466 | TNS=-20.263| WHS=-0.200 | THS=-18.188|
+
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 1.35885 %
+  Global Horizontal Routing Utilization  = 0.410984 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 10709
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 10288
+  Number of Partially Routed Nets     = 421
+  Number of Node Overlaps             = 196
+
+Phase 2 Router Initialization | Checksum: 229d178b4
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:51 . Memory (MB): peak = 2259.465 ; gain = 116.410
+
+Phase 3 Global Routing
+Phase 3 Global Routing | Checksum: 229d178b4
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:51 . Memory (MB): peak = 2259.465 ; gain = 116.410
+
+Phase 4 Initial Routing
+
+Phase 4.1 Initial Net Routing Pass
+Phase 4.1 Initial Net Routing Pass | Checksum: 1dccd8988
+
+Time (s): cpu = 00:01:18 ; elapsed = 00:00:57 . Memory (MB): peak = 2560.773 ; gain = 417.719
+Phase 4 Initial Routing | Checksum: 1dccd8988
+
+Time (s): cpu = 00:01:18 ; elapsed = 00:00:57 . Memory (MB): peak = 2560.773 ; gain = 417.719
+INFO: [Route 35-580] Design has 6 pins with tight setup and hold constraints.
+
+The top 5 pins with tight setup and hold constraints:
+
++====================+====================+==========================+
+| Launch Setup Clock | Launch Hold Clock  | Pin                      |
++====================+====================+==========================+
+| clk_out2_vgaCLKDIV | clk_out2_vgaCLKDIV | gl/state_reg[0]/D        |
+| clk_out2_vgaCLKDIV | clk_out2_vgaCLKDIV | gl/state_reg[1]_rep/D    |
+| clk_out2_vgaCLKDIV | clk_out2_vgaCLKDIV | gl/state_reg[2]/D        |
+| clk_out2_vgaCLKDIV | clk_out2_vgaCLKDIV | gl/state_reg[1]_rep__0/D |
+| clk_out2_vgaCLKDIV | clk_out2_vgaCLKDIV | gl/state_reg[1]_rep__1/D |
++--------------------+--------------------+--------------------------+
+
+File with complete list of pins: tight_setup_hold_pins.txt
+
+
+Phase 5 Rip-up And Reroute
+
+Phase 5.1 Global Iteration 0
+ Number of Nodes with overlaps = 2143
+ Number of Nodes with overlaps = 62
+ Number of Nodes with overlaps = 23
+ Number of Nodes with overlaps = 11
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.905 | TNS=-22.422| WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Global Iteration 0 | Checksum: 2fc9fc885
+
+Time (s): cpu = 00:05:48 ; elapsed = 00:03:36 . Memory (MB): peak = 3286.191 ; gain = 1143.137
+
+Phase 5.2 Global Iteration 1
+ Number of Nodes with overlaps = 47
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-4.340 | TNS=-24.061| WHS=N/A    | THS=N/A    |
+
+Phase 5.2 Global Iteration 1 | Checksum: 2155bc1ef
+
+Time (s): cpu = 00:07:40 ; elapsed = 00:04:42 . Memory (MB): peak = 3286.191 ; gain = 1143.137
+Phase 5 Rip-up And Reroute | Checksum: 2155bc1ef
+
+Time (s): cpu = 00:07:40 ; elapsed = 00:04:42 . Memory (MB): peak = 3286.191 ; gain = 1143.137
+
+Phase 6 Delay and Skew Optimization
+
+Phase 6.1 Delay CleanUp
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 241e42e9f
+
+Time (s): cpu = 00:07:41 ; elapsed = 00:04:43 . Memory (MB): peak = 3286.191 ; gain = 1143.137
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.905 | TNS=-22.422| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 6.1 Delay CleanUp | Checksum: 1c05ff27f
+
+Time (s): cpu = 00:07:41 ; elapsed = 00:04:43 . Memory (MB): peak = 3286.191 ; gain = 1143.137
+
+Phase 6.2 Clock Skew Optimization
+Phase 6.2 Clock Skew Optimization | Checksum: 1c05ff27f
+
+Time (s): cpu = 00:07:41 ; elapsed = 00:04:43 . Memory (MB): peak = 3286.191 ; gain = 1143.137
+Phase 6 Delay and Skew Optimization | Checksum: 1c05ff27f
+
+Time (s): cpu = 00:07:41 ; elapsed = 00:04:43 . Memory (MB): peak = 3286.191 ; gain = 1143.137
+
+Phase 7 Post Hold Fix
+
+Phase 7.1 Hold Fix Iter
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-3.905 | TNS=-22.422| WHS=0.105  | THS=0.000  |
+
+Phase 7.1 Hold Fix Iter | Checksum: 1fd0e089d
+
+Time (s): cpu = 00:07:43 ; elapsed = 00:04:44 . Memory (MB): peak = 3286.191 ; gain = 1143.137
+Phase 7 Post Hold Fix | Checksum: 1fd0e089d
+
+Time (s): cpu = 00:07:43 ; elapsed = 00:04:44 . Memory (MB): peak = 3286.191 ; gain = 1143.137
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 8.06553 %
+  Global Horizontal Routing Utilization  = 8.32952 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+
+--GLOBAL Congestion:
+Utilization threshold used for congestion level computation: 0.85
+Congestion Report
+North Dir 1x1 Area, Max Cong = 72.973%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 77.4775%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 72.0588%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 72.0588%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 8 Route finalize | Checksum: 1fd0e089d
+
+Time (s): cpu = 00:07:43 ; elapsed = 00:04:44 . Memory (MB): peak = 3286.191 ; gain = 1143.137
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 1fd0e089d
+
+Time (s): cpu = 00:07:43 ; elapsed = 00:04:44 . Memory (MB): peak = 3286.191 ; gain = 1143.137
+
+Phase 10 Depositing Routes
+Phase 10 Depositing Routes | Checksum: 1deb43d14
+
+Time (s): cpu = 00:07:46 ; elapsed = 00:04:46 . Memory (MB): peak = 3286.191 ; gain = 1143.137
+
+Phase 11 Post Process Routing
+Phase 11 Post Process Routing | Checksum: 1deb43d14
+
+Time (s): cpu = 00:07:46 ; elapsed = 00:04:46 . Memory (MB): peak = 3286.191 ; gain = 1143.137
+
+Phase 12 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-3.905 | TNS=-22.422| WHS=0.105  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 12 Post Router Timing | Checksum: 1deb43d14
+
+Time (s): cpu = 00:07:46 ; elapsed = 00:04:46 . Memory (MB): peak = 3286.191 ; gain = 1143.137
+Total Elapsed time in route_design: 285.998 secs
+
+Phase 13 Post-Route Event Processing
+Phase 13 Post-Route Event Processing | Checksum: f417918c
+
+Time (s): cpu = 00:07:47 ; elapsed = 00:04:46 . Memory (MB): peak = 3286.191 ; gain = 1143.137
+INFO: [Route 35-16] Router Completed Successfully
+Ending Routing Task | Checksum: f417918c
+
+Time (s): cpu = 00:07:47 ; elapsed = 00:04:47 . Memory (MB): peak = 3286.191 ; gain = 1143.137
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+276 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:07:53 ; elapsed = 00:04:51 . Memory (MB): peak = 3286.191 ; gain = 1152.691
+INFO: [Vivado 12-24828] Executing command : report_drc -file TetrisTopModule_drc_routed.rpt -pb TetrisTopModule_drc_routed.pb -rpx TetrisTopModule_drc_routed.rpx
+Command: report_drc -file TetrisTopModule_drc_routed.rpt -pb TetrisTopModule_drc_routed.pb -rpx TetrisTopModule_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.runs/impl_1/TetrisTopModule_drc_routed.rpt.
+report_drc completed successfully
+INFO: [Vivado 12-24828] Executing command : report_methodology -file TetrisTopModule_methodology_drc_routed.rpt -pb TetrisTopModule_methodology_drc_routed.pb -rpx TetrisTopModule_methodology_drc_routed.rpx
+Command: report_methodology -file TetrisTopModule_methodology_drc_routed.rpt -pb TetrisTopModule_methodology_drc_routed.pb -rpx TetrisTopModule_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.runs/impl_1/TetrisTopModule_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 3286.191 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_timing_summary -max_paths 10 -report_unconstrained -file TetrisTopModule_timing_summary_routed.rpt -pb TetrisTopModule_timing_summary_routed.pb -rpx TetrisTopModule_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+INFO: [Vivado 12-24838] Running report commands "report_incremental_reuse, report_route_status" in parallel.
+Running report generation with 2 threads.
+INFO: [Vivado 12-24828] Executing command : report_incremental_reuse -file TetrisTopModule_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [Vivado 12-24828] Executing command : report_route_status -file TetrisTopModule_route_status.rpt -pb TetrisTopModule_route_status.pb
+INFO: [Vivado 12-24828] Executing command : report_power -file TetrisTopModule_power_routed.rpt -pb TetrisTopModule_power_summary_routed.pb -rpx TetrisTopModule_power_routed.rpx
+Command: report_power -file TetrisTopModule_power_routed.rpt -pb TetrisTopModule_power_summary_routed.pb -rpx TetrisTopModule_power_routed.rpx
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+293 Infos, 2 Warnings, 1 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 3286.191 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_clock_utilization -file TetrisTopModule_clock_utilization_routed.rpt
+WARNING: [Device 21-9320] Failed to find the Oracle tile group with name 'HSR_BOUNDARY_TOP'. This is required for Clock regions and Virtual grid.
+WARNING: [Device 21-2174] Failed to initialize Virtual grid.
+INFO: [Vivado 12-24828] Executing command : report_bus_skew -warn_on_violation -file TetrisTopModule_bus_skew_routed.rpt -pb TetrisTopModule_bus_skew_routed.pb -rpx TetrisTopModule_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+generate_parallel_reports: Time (s): cpu = 00:00:34 ; elapsed = 00:00:22 . Memory (MB): peak = 3286.191 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 3286.191 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3286.191 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3286.191 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.324 . Memory (MB): peak = 3286.191 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 3286.191 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 3286.191 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 3286.191 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.runs/impl_1/TetrisTopModule_routed.dcp' has been generated.
+Command: write_bitstream -force TetrisTopModule.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC CFGBVS-1] Missing CFGBVS and CONFIG_VOLTAGE Design Properties: Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[100]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[100]_LDC_i_1/O, cell gl/grid_reg[100]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[101]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[101]_LDC_i_1/O, cell gl/grid_reg[101]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[102]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[102]_LDC_i_1/O, cell gl/grid_reg[102]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[103]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[103]_LDC_i_1/O, cell gl/grid_reg[103]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[104]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[104]_LDC_i_1/O, cell gl/grid_reg[104]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[105]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[105]_LDC_i_1/O, cell gl/grid_reg[105]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[106]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[106]_LDC_i_1/O, cell gl/grid_reg[106]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[109]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[109]_LDC_i_1/O, cell gl/grid_reg[109]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[110]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[110]_LDC_i_1/O, cell gl/grid_reg[110]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[111]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[111]_LDC_i_1/O, cell gl/grid_reg[111]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[112]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[112]_LDC_i_1/O, cell gl/grid_reg[112]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[113]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[113]_LDC_i_1/O, cell gl/grid_reg[113]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[114]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[114]_LDC_i_1/O, cell gl/grid_reg[114]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[115]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[115]_LDC_i_1/O, cell gl/grid_reg[115]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[116]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[116]_LDC_i_1/O, cell gl/grid_reg[116]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[117]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[117]_LDC_i_1/O, cell gl/grid_reg[117]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[118]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[118]_LDC_i_1/O, cell gl/grid_reg[118]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[121]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[121]_LDC_i_1/O, cell gl/grid_reg[121]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[122]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[122]_LDC_i_1/O, cell gl/grid_reg[122]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[123]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[123]_LDC_i_1/O, cell gl/grid_reg[123]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[124]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[124]_LDC_i_1/O, cell gl/grid_reg[124]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[125]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[125]_LDC_i_1/O, cell gl/grid_reg[125]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[126]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[126]_LDC_i_1/O, cell gl/grid_reg[126]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[127]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[127]_LDC_i_1/O, cell gl/grid_reg[127]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[128]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[128]_LDC_i_1/O, cell gl/grid_reg[128]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[129]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[129]_LDC_i_1/O, cell gl/grid_reg[129]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[130]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[130]_LDC_i_1/O, cell gl/grid_reg[130]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[133]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[133]_LDC_i_1/O, cell gl/grid_reg[133]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[134]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[134]_LDC_i_1/O, cell gl/grid_reg[134]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[135]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[135]_LDC_i_1/O, cell gl/grid_reg[135]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[136]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[136]_LDC_i_1/O, cell gl/grid_reg[136]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[137]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[137]_LDC_i_1/O, cell gl/grid_reg[137]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[138]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[138]_LDC_i_1/O, cell gl/grid_reg[138]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[139]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[139]_LDC_i_1/O, cell gl/grid_reg[139]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[140]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[140]_LDC_i_1/O, cell gl/grid_reg[140]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[141]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[141]_LDC_i_1/O, cell gl/grid_reg[141]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[142]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[142]_LDC_i_1/O, cell gl/grid_reg[142]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[145]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[145]_LDC_i_1/O, cell gl/grid_reg[145]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[146]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[146]_LDC_i_1/O, cell gl/grid_reg[146]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[147]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[147]_LDC_i_1/O, cell gl/grid_reg[147]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[148]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[148]_LDC_i_1/O, cell gl/grid_reg[148]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[149]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[149]_LDC_i_1/O, cell gl/grid_reg[149]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[150]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[150]_LDC_i_1/O, cell gl/grid_reg[150]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[151]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[151]_LDC_i_1/O, cell gl/grid_reg[151]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[152]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[152]_LDC_i_1/O, cell gl/grid_reg[152]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[153]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[153]_LDC_i_1/O, cell gl/grid_reg[153]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[154]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[154]_LDC_i_1/O, cell gl/grid_reg[154]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[157]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[157]_LDC_i_1/O, cell gl/grid_reg[157]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[158]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[158]_LDC_i_1/O, cell gl/grid_reg[158]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[159]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[159]_LDC_i_1/O, cell gl/grid_reg[159]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[160]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[160]_LDC_i_1/O, cell gl/grid_reg[160]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[161]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[161]_LDC_i_1/O, cell gl/grid_reg[161]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[162]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[162]_LDC_i_1/O, cell gl/grid_reg[162]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[163]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[163]_LDC_i_1/O, cell gl/grid_reg[163]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[164]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[164]_LDC_i_1/O, cell gl/grid_reg[164]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[165]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[165]_LDC_i_1/O, cell gl/grid_reg[165]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[166]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[166]_LDC_i_1/O, cell gl/grid_reg[166]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[169]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[169]_LDC_i_1/O, cell gl/grid_reg[169]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[170]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[170]_LDC_i_1/O, cell gl/grid_reg[170]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[171]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[171]_LDC_i_1/O, cell gl/grid_reg[171]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[172]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[172]_LDC_i_1/O, cell gl/grid_reg[172]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[173]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[173]_LDC_i_1/O, cell gl/grid_reg[173]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[174]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[174]_LDC_i_1/O, cell gl/grid_reg[174]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[175]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[175]_LDC_i_1/O, cell gl/grid_reg[175]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[176]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[176]_LDC_i_1/O, cell gl/grid_reg[176]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[177]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[177]_LDC_i_1/O, cell gl/grid_reg[177]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[178]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[178]_LDC_i_1/O, cell gl/grid_reg[178]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[181]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[181]_LDC_i_1/O, cell gl/grid_reg[181]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[182]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[182]_LDC_i_1/O, cell gl/grid_reg[182]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[183]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[183]_LDC_i_1/O, cell gl/grid_reg[183]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[184]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[184]_LDC_i_1/O, cell gl/grid_reg[184]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[185]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[185]_LDC_i_1/O, cell gl/grid_reg[185]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[186]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[186]_LDC_i_1/O, cell gl/grid_reg[186]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[187]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[187]_LDC_i_1/O, cell gl/grid_reg[187]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[188]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[188]_LDC_i_1/O, cell gl/grid_reg[188]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[189]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[189]_LDC_i_1/O, cell gl/grid_reg[189]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[190]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[190]_LDC_i_1/O, cell gl/grid_reg[190]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[193]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[193]_LDC_i_1/O, cell gl/grid_reg[193]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[194]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[194]_LDC_i_1/O, cell gl/grid_reg[194]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[195]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[195]_LDC_i_1/O, cell gl/grid_reg[195]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[196]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[196]_LDC_i_1/O, cell gl/grid_reg[196]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[197]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[197]_LDC_i_1/O, cell gl/grid_reg[197]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[198]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[198]_LDC_i_1/O, cell gl/grid_reg[198]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[199]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[199]_LDC_i_1/O, cell gl/grid_reg[199]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[200]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[200]_LDC_i_1/O, cell gl/grid_reg[200]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[201]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[201]_LDC_i_1/O, cell gl/grid_reg[201]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[202]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[202]_LDC_i_1/O, cell gl/grid_reg[202]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[205]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[205]_LDC_i_1/O, cell gl/grid_reg[205]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[206]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[206]_LDC_i_1/O, cell gl/grid_reg[206]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[207]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[207]_LDC_i_1/O, cell gl/grid_reg[207]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[208]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[208]_LDC_i_1/O, cell gl/grid_reg[208]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[209]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[209]_LDC_i_1/O, cell gl/grid_reg[209]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[210]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[210]_LDC_i_1/O, cell gl/grid_reg[210]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[211]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[211]_LDC_i_1/O, cell gl/grid_reg[211]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[212]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[212]_LDC_i_1/O, cell gl/grid_reg[212]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[213]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[213]_LDC_i_1/O, cell gl/grid_reg[213]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[214]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[214]_LDC_i_1/O, cell gl/grid_reg[214]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[217]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[217]_LDC_i_1/O, cell gl/grid_reg[217]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[218]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[218]_LDC_i_1/O, cell gl/grid_reg[218]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC PDRC-153] Gated clock check: Net gl/grid_reg[219]_1 is a gated clock net sourced by a combinational pin gl/grid_reg[219]_LDC_i_1/O, cell gl/grid_reg[219]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+INFO: [Common 17-14] Message 'DRC PDRC-153' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 211 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./TetrisTopModule.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-1876] WebTalk data collection is mandatory when using a ULT device. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+309 Infos, 105 Warnings, 1 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:35 ; elapsed = 00:00:27 . Memory (MB): peak = 3286.191 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 13 17:06:26 2024...

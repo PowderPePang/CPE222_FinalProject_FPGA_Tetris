@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Fri Dec 13 16:56:09 2024
+# Process ID: 13460
+# Current directory: C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.runs/synth_1
+# Command line: vivado.exe -log TetrisTopModule.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TetrisTopModule.tcl
+# Log file: C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.runs/synth_1/TetrisTopModule.vds
+# Journal file: C:/Users/paeng/KMUTT/Year2/1-67/CPE222/Vivado/Tetris/Tetris.runs/synth_1\vivado.jou
+# Running On        :ACER-i7-Notebook
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22000
+# Processor Detail  :Intel(R) Core(TM) i7-5500U CPU @ 2.40GHz
+# CPU Frequency     :2400 MHz
+# CPU Physical cores:2
+# CPU Logical cores :4
+# Host memory       :17090 MB
+# Swap memory       :2550 MB
+# Total Virtual     :19640 MB
+# Available Virtual :6869 MB
+#-----------------------------------------------------------
+source TetrisTopModule.tcl -notrace

@@ -69,3 +69,4 @@ This project implements the classic puzzle game **Tetris** on an FPGA board usin
 6. **Keyboard input delay** → Replaced with **Basys3 push buttons** for accuracy.  
 
 ---
+![Example Image](./image/217627_0.png)
